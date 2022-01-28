@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.layout {
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+/* Container */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 2rem 4rem;
+}
+
+/* Section generic */
+
+.section {
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* Navbar */
+
+header {
+  width: 100%;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  background: sandybrown;
+}
+
+nav ul {
+  background: #070b24;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all ease-in-out 250ms;
+}
+
+ul li:hover {
+  background: #b8791a;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: sandybrown;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #070b24;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  nav ul {
+  display: none;
+
+  }
+}
+
+h2 img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 70px;
+  left: 45%;
+} 
+
+.pie-pagina .grupo-1{
+  width: 90%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap:30px;
+  padding: 35px 0px;
+}
+
+/* Section Img */
+
+.section-image {
+  display: flex;
+  justify-content: center;
+}
+
+.formasDePago {
+  display: flex;
+  align-items: center;
+
+}
+
+/* Section Zapatilas */
+
+.zapas {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+
+.section1 {
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+  width: 100%;
+  background-color: #070b24;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #090635;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+}
+.pie-pagina .grupo-2{
+  background-color: #af6a1c;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+/*formulario de contacto*/
+
+.contacto {
+  font-size: 25px;
+}
+
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d37c18;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d37c18;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #d37c18;
+  border-color: #d37c18;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #d69d22;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: black;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.texto {
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(243, 154, 52);
+  width: 100vw;
+  height: 100vh;
+
+  justify-items: center;
+  align-items: center;
+
+  grid-auto-flow: dense;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-featured-top {
+  background-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.grid-featured-bottom {
+  background-color: green;
+  grid-column: 2 / span 2;
+  grid-row: 6;
+}
+
+.quienesP {
+  font-size: 30px;
+}
+
+.titulocontac {
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.marcasfav {
+  display: flex;
+  order: row;
+  justify-content: center;
+  width: 35vmax; 
+  height: 500px;
+}
+
+.marcasp {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content { padding: 120px 0;}
+
+    .who {background: #ffffff; color: #fff;}
+    .titleQuienes {color: black; text-align: center; height: 80px;}
+    .who p { max-width: 1055px; margin: 0 auto;}
+    .services {background: #ffffff;color: #fff;}

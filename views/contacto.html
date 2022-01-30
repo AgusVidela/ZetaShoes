@@ -22,71 +22,77 @@
         <header>
           <h1>Zeta Shoes</h1>
         </header>
-        
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="list-item"><a href="../index.html">Inicio</a></li>
-            <li><a href="../views/nosotros.html">Nosotros</a></li>
-            <li><a href="../views/tienda.html">Tienda</a></li>
-            <li><a href="../views/tu-zapatilla.html">Tu Zapatilla</a></li>
-            <li><a href="../views/contacto.html">Contacto</a></li>
-          </ul>
-          <div class="hide">
-            <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        <nav class="navbar navbar-expand-lg navbar-light nav-list">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link text-white" href="../index.html">Inicio</a>
+                <a class="nav-link text-white" href="../views/nosotros.html">Nosotros</a>
+                <a class="nav-link text-white" href="../views/tienda.html">Tienda</a>
+                <a class="nav-link text-white" href="../views/tu-zapatilla.html">Zapatilla</a>
+                <a class="nav-link text-white" href="../views/contacto.html">Contacto</a>
+              </div>
+            </div>
           </div>
         </nav>
-               <hr>
-               <h3 class="text-center"><b>Contacto</b></h3>
-               <hr>
+               <h3 class="text-center mt-5"><b>Contacto</b></h3>
                <div class="container">
-                <div class="row">      
+                <div class="row justify-content-center ">      
                   <h1 class="text-center">Formulario de contacto</h1>
-                    <h3>Escribinos y en breve nos pondremos en contacto contigo</h3>
-                      <form action="submeter-formulario.php" method="post">       
-                            <p>
-                              <label for="nombre" class="colocar_nombre">Nombre
-                                <span class="obligatorio">*</span>
-                              </label>
-                                <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
-                            </p>
-                            <p>
-                              <label for="email" class="colocar_email">Email
-                                <span class="obligatorio">*</span>
-                              </label>
-                                <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
-                            </p>
-                            <p>
-                              <label for="telefone" class="colocar_telefono">Teléfono
-                              </label>
-                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                            </p>
-                            <p>
-                              <label for="asunto" class="colocar_asunto">Asunto
-                                <span class="obligatorio">*</span>
-                              </label>
-                                <input type="text" name="introducir_asunto" id="assunto" required placeholder="Escribe un asunto">
-                            </p>
-                            <p>
-                              <label for="mensaje" class="colocar_mensaje">Mensaje
-                                <span class="obligatorio">*</span>
-                              </label>
-                              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea> 
-                              </p>
-                            <button type="submit" name="enviar_formulario" id="enviar" class="btn btn-primary0" >Enviar</button>
-                            <p class="aviso">
-                              <span class="obligatorio"> * </span>los campos son obligatorios.
-                            </p>          
-                      </form>
-                </div>  
-              </div>
-              <footer class="pie-pagina">
-                <div class="grupo-1">
-                    <div class="box">
-                        <figure>
-                            <a href="#">
+                    <h3 class="text-center">Escribinos y en breve nos pondremos en contacto contigo</h3>
+                      <div class="card border-1" id="card-style" >
+                        <div class="card-body">
+                          <form class="form">
+                            <div class="row">
+                              <div class="col-12">
+                                <label for="nombre" class="form-label">
+                                  Nombre <span>*</span> 
+                                </label>
+                                <input type="text" class="form-control" id="form-zeta" required placeholder="Escribe tu nombre">
+                              </div>
+                              <div class="col-12 mt-2">
+                                <label for="email" class="form-label">Email
+                                  <span>*</span>
+                                </label>
+                                <input type="email" class="form-control" id="form-zeta" placeholder="Escribe tu Email">
+                              </div>
+                              <div class="col-12 mt-2">
+                                <label  class="form-label">Teléfono
+                                </label>
+                                <input type="number" class="form-control" id="form-zeta" placeholder="Escribe tu teléfono">
+                              </div>
+                              <div class="col-12 mt-2">
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                  <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="form-zeta" required placeholder="Escribe un asunto">
+                              </div>
+                              <div class="col-12 mt-2">
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                  <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="form-control" id="form-zeta" required placeholder="Deja aquí tu comentario..."></textarea> 
+                              </div>
+                              <div class="col-12 mt-2">
+                                <button type="submit" class="btn btn-primary w-100" >Enviar</button>
+                              </div>
+                            </div>       
+                          </form>
+                        </div>
+                      </div>
+                        </div>  
+                      </div>
+                      <footer class="pie-pagina">
+                        <div class="grupo-1">
+                          <div class="box">
+                            <figure>
+                              <a href="#">
                                 <img src="" alt="logo">
-                            </a>
-                        </figure>
+                              </a>
+                            </figure>
                     </div>
                     <div class="box">
                         <h2>SOBRE NOSOTROS</h2>
@@ -106,12 +112,7 @@
                     <small>&copy; 2021 <b>Zeta Shoes</b> - Todos los Derechos Reservados.</small>
                 </div>
             </footer>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-          <script>
-            $(".hide").on('click', function() {
-              $("nav ul").toggle('slow');
-            })
-          </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
   
   </html>

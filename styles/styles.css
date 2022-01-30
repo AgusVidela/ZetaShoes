@@ -37,7 +37,7 @@ header {
   background: sandybrown;
 }
 
-nav ul {
+.nav-list {
   background: #070b24;
   text-align: center;
   list-style: none;
@@ -201,17 +201,9 @@ h2 img {
   padding-left: 30px;
 }
 
-input {
+#form-zeta {
   background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
   border-color: #d37c18;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
 }
 
 textarea {
@@ -371,4 +363,7 @@ p {
 .services {
   background: #ffffff;
   color: #fff;
+}
+#card-style {
+  width: 30rem;
 }

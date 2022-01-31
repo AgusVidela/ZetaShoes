@@ -328,13 +328,6 @@ p {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.marcasfav {
-  display: flex;
-  order: row;
-  justify-content: center;
-  width: 35vmax;
-  height: 500px;
-}
 
 .marcasp {
   text-align: center;

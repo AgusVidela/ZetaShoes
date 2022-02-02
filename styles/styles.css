@@ -25,10 +25,10 @@ body {
 
 header {
   width: 100%;
-  padding: 40px;
+  padding: 20px;
   color: white;
   text-align: center;
-  background: sandybrown;
+  background: rgb(29, 37, 67);
 }
 
 .nav-list {
@@ -161,6 +161,10 @@ div.desc {
     "Lucida Sans", Arial, sans-serif;
 }
 
+.formasP, .quienesP {
+  text-align: center;
+}
+
 /*:::::Pie de Pagina*/
 .pie-pagina {
   width: 100%;
@@ -183,7 +187,7 @@ div.desc {
   align-items: center;
 }
 .pie-pagina .grupo-1 .box figure img {
-  width: 250px;
+  width: 100px;
 }
 .pie-pagina .grupo-1 .box h2 {
   color: #fff;
@@ -375,10 +379,6 @@ p {
   padding: 120px 0;
 }
 
-.who {
-  background: #ffffff;
-  color: #fff;
-}
 .titleQuienes {
   color: black;
   text-align: center;

@@ -155,14 +155,12 @@ div.desc {
   clear: both;
 }
 
-.section1 {
-  font-size: 25px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.formasP, .quienesP {
-  text-align: center;
+.quienesS , .formasDePago {
+    padding: 4rem 1.5rem;
+    width: 100%; 
+    margin: 0;
+    color: black;
+    text-align: center;
 }
 
 /*:::::Pie de Pagina*/

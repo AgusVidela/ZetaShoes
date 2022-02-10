@@ -1,0 +1,26 @@
+{
+  "name": "zetashoes",
+  "version": "1.0.0",
+  "description": "Esta rama, es en la que estoy tabajando dia a dia!",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bootstrap": "^5.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "--include-path scss scss/origen.scss css/origen.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgusVidela/ZetaShoes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgusVidela/ZetaShoes/issues"
+  },
+  "homepage": "https://github.com/AgusVidela/ZetaShoes#readme"
+}

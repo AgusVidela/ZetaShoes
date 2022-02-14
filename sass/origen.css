@@ -5,34 +5,172 @@
           box-sizing: border-box;
 }
 
+/* Navbar */
+header {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background: #1d2543;
+}
+
+.nav-list {
+  background: #1d2543;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+ul li:hover {
+  background: #af6a1c;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #af6a1c;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+  }
+  .hide {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: #1d2543;
+}
+
+.pie-pagina .pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pie-pagina .pie-pagina .grupo-1 .box figure img {
+  width: 100px;
+}
+
+.pie-pagina .pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #1d2543;
+  text-align: center;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+
+.pie-pagina .pie-pagina .grupo-2 {
+  background-color: #af6a1c;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-image: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
   background-image: linear-gradient(to right, red, yellow);
 }
 
-/* Section Zapatilas */
-div.gallery {
-  border: 2px solid black;
+/* Carrousel */
+.carousel.inner {
+  max-height: 30rem;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+/* Quienes somos*/
+.content {
+  padding: 15px 0;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
+.titleQuienes {
+  color: black;
   text-align: center;
+  height: 80px;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.who p {
+  max-width: 1055px;
+  margin: 0 auto;
+}
+
+.services {
+  background: #ffffff;
+  color: #fff;
+}
+
+#card-style {
+  width: 30rem;
 }
 
 /* Section Img */
@@ -73,135 +211,14 @@ div.desc {
   text-align: center;
 }
 
-/*:::::Pie de Pagina*/
-.pie-pagina {
-  width: 100%;
-  background-color: #070b24;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 50px;
-  padding: 45px 0px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img {
-  width: 100px;
-}
-
-.pie-pagina .grupo-1 .box h2 {
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .box p {
-  color: #efefef;
-  margin-bottom: 10px;
-}
-
-.pie-pagina .grupo-1 .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: #090635;
-  text-align: center;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
-}
-
-.pie-pagina .grupo-2 {
-  background-color: #af6a1c;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-
-.pie-pagina .grupo-2 small {
-  font-size: 15px;
-}
-
-/*formulario de contacto*/
-.contacto {
-  font-size: 25px;
-}
-
-.contact_form {
-  width: 460px;
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  background-color: #fbfbfb;
-  padding-left: 30px;
-}
-
-#form-zeta {
-  background-color: #fbfbfb;
-  border-color: #d37c18;
-}
-
-textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d37c18;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-}
-
-label {
-  display: block;
-  float: center;
-}
-
-button {
-  text-transform: uppercase;
-  background-color: #d37c18 !important;
-  border-color: #d37c18 !important;
-  color: #fff;
-}
-
-span {
-  color: #d69d22;
-}
-
-.aviso {
-  font-size: 13px;
-  color: #0e0e0e;
+.clearfix:after {
+  content: "";
+  display: tablec;
+  clear: both;
 }
 /*# sourceMappingURL=origen.css.map */

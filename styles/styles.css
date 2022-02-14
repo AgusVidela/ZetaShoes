@@ -202,11 +202,6 @@ div.desc {
   padding-left: 30px;
 }
 
-#form-zeta {
-  background-color: #fbfbfb;
-  border-color: #d37c18;
-}
-
 textarea {
   background-color: #fbfbfb;
   width: 405px;
@@ -325,23 +320,6 @@ p {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/*Formas de pago Y Quienes somos*/
-.quienesS , .formasDePago {
-  padding: 4rem 1.5rem;
-  width: 100%; 
-  margin: 0;
-  color: black;
-  text-align: center;
-}
-
-.marcasp {
-  text-align: center;
-  font-size: 25px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-/*+++++++++++++*/
 
 /* Quienes somos*/
 .content {

@@ -67,22 +67,6 @@ ul li a {
     display: none;
   }
 }
-
-h2 img {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 70px;
-  left: 45%;
-}
-
-.pie-pagina .grupo-1 {
-  width: 90%;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 30px;
-  padding: 35px 0px;
-}
-
 /* Section Img */
 
 .section-image {

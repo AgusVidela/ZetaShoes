@@ -1,0 +1,22 @@
+@mixin galeria {
+    border: 2px solid black;
+    :hover {
+    border: 1px solid #777;
+  }
+    img {
+    width: 100%;
+    height: auto;
+  }
+   div.desc {
+    padding: 15px;
+    text-align: center;
+  } 
+}
+
+@mixin header {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background: map-get($map: $paleta, $key: colorNav ); 
+}

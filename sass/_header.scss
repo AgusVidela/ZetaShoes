@@ -1,15 +1,11 @@
 /* Navbar */
 
 header {
-    width: 100%;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    background: $colorNav;
+  @include header;
   }
   
   .nav-list {
-    background: $colorNav;
+    background: map-get($map: $paleta, $key: colorNav );
     text-align: center;
     list-style: none;
     overflow: hidden;
@@ -19,26 +15,24 @@ header {
     display: inline-block;
     padding: 20px;
     transition: all ease-in-out 250ms;
-  }
   
-  ul li:hover {
-    background: $colorMain;
-  }
-  
-  ul li a {
+    a {
     color: white;
     text-decoration: none;
   }
-  
-  .hide {
+   
+  ul li:hover {
+    background: map-get($map: $paleta, $key: colorMain );
+  }
+    .hide {
     padding: 16px;
     font-size: 22px;
-    background: $colorMain;
+    background: map-get($map: $paleta, $key: colorMain );
     color: white;
     cursor: pointer;
     display: none;
   }
-  
+
   @media (max-width: 768px) {
     ul li {
       width: 100%;
@@ -55,3 +49,4 @@ header {
       display: none;
     }
   }
+}

@@ -2,7 +2,6 @@
 
 header {
   @include header;
-  }
   
   .nav-list {
     background: map-get($map: $paleta, $key: colorNav );
@@ -47,6 +46,7 @@ header {
   
     nav ul {
       display: none;
+      }
     }
   }
 }

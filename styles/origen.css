@@ -56,8 +56,7 @@ ul li a {
 
 /*:::::Pie de Pagina*/
 .pie-pagina {
-  width: 100%;
-  background-color: #1d2543;
+  height: 2vh;
 }
 
 .pie-pagina .grupo-1 {
@@ -66,8 +65,7 @@ ul li a {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px 0px;
 }
@@ -109,7 +107,6 @@ ul li a {
   line-height: 45px;
   color: #fff;
   margin-right: 10px;
-  background-color: #1d2543;
   text-align: center;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
@@ -126,9 +123,6 @@ ul li a {
   color: #fff;
 }
 
-.grupo-2 small {
-  font-size: 15px;
-}
 
 /*formulario de contacto*/
 .contacto {
@@ -165,11 +159,15 @@ label {
   float: center;
 }
 
-button {
-  text-transform: uppercase;
-  background-color: #af6a1c !important;
-  border-color: #af6a1c !important;
-  color: #fff;
+.btn {
+  color: #fff !important;
+  background: #C78438 !important;
+  border-color: #a77032 !important;
+}
+.btn :hover {
+  color: #000 !important;
+  background: #d59e5f !important;
+  border-color: #E8A354 !important;
 }
 
 span {
@@ -196,7 +194,7 @@ h3 {
 
 p {
   font-size: 14px;
-  color: #0e0e0e;
+  color: #fff;
 }
 
 ::-webkit-input-placeholder {
@@ -224,7 +222,7 @@ p {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr)(3);
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
@@ -275,11 +273,13 @@ p {
 
 .titulocontac {
   font-size: 25px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+ "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+ "Lucida Sans", Arial, sans-serif;
   background-image: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
   background-image: linear-gradient(to right, red, yellow);
 }
@@ -314,6 +314,22 @@ body {
   width: 30rem;
 }
 
+.section-fo {
+  padding: 2rem 0;
+  position: relative;
+  background: #1d2543;
+}
+
+.section {
+  padding: 2rem 0;
+  position: relative;
+  background: #fff;
+}
+
+.section p { 
+  color: #000;
+}
+
 /* Section Img */
 .section-image {
   display: -webkit-box;
@@ -342,6 +358,7 @@ div.gallery:hover {
   border: 1px solid #777;
 }
 
+
 div.gallery img {
   width: 100%;
   height: auto;
@@ -357,9 +374,4 @@ div.desc {
           box-sizing: border-box;
 }
 
-.clearfix:after {
-  content: "";
-  display: tablec;
-  clear: both;
-}
 /*# sourceMappingURL=origen.css.map */

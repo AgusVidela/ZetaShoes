@@ -1,9 +1,7 @@
 @import "variables";
-@import "tipografia";
 @import "header";
 @import "footer";
 @import "contacto";
-
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -39,14 +37,9 @@ body {
   width: 30rem;
 }
 
+
 /* Section Zapatilas */
 
 div.gallery {
     @include galeria;
-  }
-
-  .clearfix:after {
-    content: "";
-    display: tablec;
-    clear: both;
   }

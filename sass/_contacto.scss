@@ -99,12 +99,10 @@
     background-color: rgb(243, 154, 52);
     width: 100vw;
     height: 100vh;
-  
     justify-items: center;
     align-items: center;
-  
     grid-auto-flow: dense;
-  }
+  
   
   .grid-item {
     width: 100%;
@@ -126,10 +124,11 @@
     grid-column: 2 / span 2;
     grid-row: 6;
   }
+
   
   .titulocontac {
     font-size: 25px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  
+  }  
